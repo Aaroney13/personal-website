@@ -171,6 +171,7 @@ html {
   font-size: 30px;
   line-height: 10px;
   background-image: none;
+  text-align: center;
   color: white;
   padding-top: 2%;
   padding-left: 1%;
@@ -183,6 +184,7 @@ html {
   font-weight: 50;
   font-size: 30px;
   line-height: 10px;
+  text-align: center;
   background-image: none;
   color: white;
   padding-top: 2%;
@@ -195,6 +197,7 @@ html {
 .header2 p{
   font-weight: 50;
   font-size: 20px;
+  text-align: center;
   line-height: 30px;
   background-image: none;
   color: white;
