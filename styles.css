@@ -286,7 +286,7 @@ html {
 }
 
 .collapsible {
-  background-color: rgba(36, 96, 124, 0.5);
+  background-color: transparent;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -295,12 +295,29 @@ html {
   text-align: center;
   outline: none;
   
+  animation: zoomOut 0.2s ease-in-out forwards;
   font-size: 15px;
 }
 
-/* .active, .collapsible:hover {
-
-} */
+@keyframes zoom {
+  from {
+    
+  }
+  to {
+    font-size: 17px;
+  }
+}
+@keyframes zoomOut {
+  from {
+    font-size: 17px;
+  }
+  to {
+    font-size: 15px;
+  }
+}
+.collapsible:hover {
+  animation: zoom 0.2s ease-in-out forwards;
+}
 
 @media (max-width: 800px) {
   .flip-container {
@@ -312,15 +329,17 @@ html {
 /* Projects formatting */
 #projects {
   display: grid;
-  grid: auto / auto auto auto auto auto;
+  grid: auto / 20em auto;
 }
 
 #projects-buttons {
   grid-column-start: auto;
   grid-column-end: span 1;
+  position: sticky;
+  background-color: rgba(36, 96, 124, 0.5);
 }
 
 #projects-content {
   grid-column-start: auto;
-  grid-column-end: span 4;
+  grid-column-end: span 1;
 }
