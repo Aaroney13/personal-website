@@ -27,7 +27,7 @@
             <a href="https://www.linkedin.com/in/aaron-epstein13/"><button type="button">LinkedIn</button></a>
         </div>
         <div class="background">
-            <div id="home" class="remove">
+            <div id="home" class="remove text-color">
                 <div  class="header">
                     <h1>Aaron David Ordoñez Epstein</h1>
                     <h2>Welcome to my website. This is just the home.</h2>
@@ -35,31 +35,31 @@
                 <div class="flip-container">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                            <div class="flip-card-front" style="background-color: #0D1B2A;">
                             <h1>Program</h1> 
                             </div>
-                            <div class="flip-card-back">
+                            <div class="flip-card-back" style="background-color: #0D1B2A;">
                             <p>Python, SQL, Java, Git/Github</p> 
                             </div>
                         </div>
                     </div>
                     <div class="flip-card" >
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: rgb(128, 31, 160);">
-                            <h1>Contact</h1> 
+                            <div class="flip-card-front" style="background-color: #1B263B;">
+                            <h1>Contact</h1>
                             </div>
-                            <div class="flip-card-back" style="background-color: rgb(128, 31, 160);">
+                            <div class="flip-card-back" style="background-color: #1B263B;">
                             <p>aaronepstein2021
-                                @gmail.com</p> 
+                                @gmail.com</p>
                             </div>
                         </div>
                     </div>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: rgb(160, 128, 31);">
+                            <div class="flip-card-front" style="background-color: #415A77;">
                             <h1>Design</h1> 
                             </div>
-                            <div class="flip-card-back" style="background-color: rgb(160, 128, 31);">
+                            <div class="flip-card-back" style="background-color: #415A77;">
                             <p>Adobe Photoshop, Adobe Premiere</p> 
                             </div>
                         </div>
@@ -68,54 +68,54 @@
                 <div class="flip-container">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: rgb(160, 128, 31); ">
+                            <div class="flip-card-front" style="background-color: #0D1B2A;">
                             <h1>Courses</h1> 
                             </div>
-                            <div class="flip-card-back" style="background-color: rgb(160, 128, 31); ">
+                            <div class="flip-card-back" style="background-color: #0D1B2A;">
                             <p>Linear Algebra, Calculus, Information Systems</p> 
                             </div>
                         </div>
                     </div>
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front">
+                            <div class="flip-card-front" style="background-color: #415A77;">
                             <h1>Software</h1> 
                             </div>
-                            <div class="flip-card-back">
+                            <div class="flip-card-back" style="background-color: #415A77;">
                             <p>MS Office, Google Suite</p> 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="projects" class="remove" style="display:none">
-                <div  class="header2">
-                    <h3>Economic Indicators</h3>
+            <div id="projects" class="remove text-color" style="display:none">
+                <button type="button" class="collapsible">Economic Indicators</button>
+                <div  class="header2" style="display: none">
                     <p>I am currently working on creating models to show the correlation between different key economic health indicators.
                         The following graph shows a model of % changes of GDP predicting % changes of inflation since 1960.
                     </p>
-                    <img src="images/INFandGDP.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;">
+                    <img src="images/INFandGDP.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;display: block;margin: 0 auto;">
                     <p>As you can tell from the graph above, inflation and gdp have a pretty clear relationship (as nominal GDP is affected by changes of inflation). This cannot be said for the Dow Jones and GDP.
                     </p>
-                    <img src="images/DJIandGDP.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;">
+                    <img src="images/DJIandGDP.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;display: block;margin: 0 auto;">
                     <p>If we add in a variety of other variables including: unemployment, consumer confidence, and inflation we see a slightly greater correlation.
                         Most of the movement is still drawn from GDP, showing that there is very little effect of these variables in explaining variation of the DJIA.
                     </p>
-                    <img src="images/ALLandDJI.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;">
+                    <img src="images/ALLandDJI.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;display: block;margin: 0 auto;">
                 </div>
-                <div  class="header2">
-                    <h2>Pygame Physics Engine</h2>
+                <button type="button" class="collapsible">Pygame Physics Engine</button>
+                <div  class="header2" style="display: none">
                     <p>A simple 2D physics engine that uses the library pygame to draw polygons at a series of points. Gravity is represented
                         accurately and objects lose momentum with bounces.
                     </p>
-                    <video width="45%" height="20%" style="max-width:100%;height:auto;padding-left:1%;" controls>
+                    <video width="45%" height="20%" style="max-width:100%;height:auto;padding-left:1%;display: block;margin: 0 auto;" controls>
                         <source src="images/fallingphysics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                     <p>Rotations are based on a middle representation of the shape then translated when drawn. The speed at which the box flies at is directly
                         related to the movement of the mouse. This is done by averaging the direction and speed of the most recent mouse movements.
                     </p>
-                    <video width="45%" height="20%" style="max-width:100%;height:auto;padding-left:1%;" controls>
+                    <video width="45%" height="20%" style="max-width:100%;height:auto;padding-left:1%;display: block;margin: 0 auto;" controls>
                         <source src="images/videophysics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
@@ -167,4 +167,19 @@
             </div>
         </div>    
     </body>
+    <script>
+    let coll = document.getElementsByClassName("collapsible");
+    let b;
+    for (b = 0; b < coll.length; b++) {
+    coll[b].addEventListener("click", function() {
+        this.classList.toggle("active");
+        let content = this.nextElementSibling;
+        if (content.style.display === "block"){
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+    });
+    }
+    </script>
 </html>
