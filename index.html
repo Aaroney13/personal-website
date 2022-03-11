@@ -7,182 +7,76 @@
         <meta property="og:url" content="https://aaroney13.github.io/personal-website/" />
         <meta name="image" property="og:image" content="https://aaroney13.github.io/personal-website/images/mywebsite2.PNG" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script>
-            function openTab(tabName) {
-                var i;
-                var x = document.getElementsByClassName('remove');
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                if (tabName !== 'projects')
-                    document.getElementById(tabName).style.display = "inline";
-                else
-                    document.getElementById(tabName).style.display = "grid";
-            }
-
-            function openProj(projName) {
-                let i;
-                var x = document.getElementById('projects-content').children;
-
-                for (i = 0; i < x.length; i++) 
-                    x[i].style.display = "none";
-                
-                document.getElementById(projName).style.display = "inline";
-            }
-        </script>
+        <script src="UI.js"></script>
     </head>
-    <body>
+    <body class="background">
         <div class="tab">
-            <button class="tablinks" onclick="openTab('home')">Home</button>
-            <button class="tablinks" onclick="openTab('timeline')">Timeline</button>
-            <button class="tablinks" onclick="openTab('projects')">Projects</button>
+            <a href="index.html"><button type="button">Home</button></a>
+            <a href="timeline.html"><button type="button">Timeline</button></a>
+            <a href="projects-tab.html"><button type="button">Projects</button></a>
             <a href="https://github.com/Aaroney13"><button type="button">Github</button></a>
             <a href="https://www.linkedin.com/in/aaron-epstein13/"><button type="button">LinkedIn</button></a>
         </div>
-        <div class="background">
-            <div id="home" class="remove text-color">
-                <div  class="header">
-                    <h1>Aaron David Ordoñez Epstein</h1>
-                    <h2>Welcome to my website. This is just the home.</h2>
-                </div>
-                <div class="flip-container">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: #0D1B2A;">
-                            <h1>Program</h1> 
-                            </div>
-                            <div class="flip-card-back" style="background-color: #0D1B2A;">
-                            <p>Python, SQL, Java, Git/Github</p> 
-                            </div>
+        <div id="home" class="remove text-color">
+            <div  class="header">
+                <h1>Aaron Epstein</h1>
+                <h2>Welcome to my website. This is just the home.</h2>
+            </div>
+            <div class="flip-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #0D1B2A;">
+                        <h1>Program</h1> 
                         </div>
-                    </div>
-                    <div class="flip-card" >
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: #1B263B;">
-                            <h1>Contact</h1>
-                            </div>
-                            <div class="flip-card-back" style="background-color: #1B263B;">
-                            <p>aaronepstein2021
-                                @gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: #415A77;">
-                            <h1>Design</h1> 
-                            </div>
-                            <div class="flip-card-back" style="background-color: #415A77;">
-                            <p>Adobe Photoshop, Adobe Premiere</p> 
-                            </div>
+                        <div class="flip-card-back" style="background-color: #0D1B2A;">
+                        <p>Python, SQL, Java, Git/Github</p> 
                         </div>
                     </div>
                 </div>
-                <div class="flip-container">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: #0D1B2A;">
-                            <h1>Courses</h1> 
-                            </div>
-                            <div class="flip-card-back" style="background-color: #0D1B2A;">
-                            <p>Linear Algebra, Calculus, Information Systems</p> 
-                            </div>
+                <div class="flip-card" >
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #1B263B;">
+                        <h1>Contact</h1>
+                        </div>
+                        <div class="flip-card-back" style="background-color: #1B263B;">
+                        <p>aaronepstein2021
+                            @gmail.com</p>
                         </div>
                     </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background-color: #415A77;">
-                            <h1>Software</h1> 
-                            </div>
-                            <div class="flip-card-back" style="background-color: #415A77;">
-                            <p>MS Office, Google Suite</p> 
-                            </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #415A77;">
+                        <h1>Design</h1> 
+                        </div>
+                        <div class="flip-card-back" style="background-color: #415A77;">
+                        <p>Adobe Photoshop, Adobe Premiere</p> 
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="projects" class="remove text-color">
-                <div id="projects-buttons">
-                    <button type="button" class="collapsible" onclick="openProj('econIndicators')">Economic Indicators</button>
-                    <button type="button" class="collapsible" onclick="openProj('physics')">Pygame Physics Engine</button>
-                </div>
-                <div id="projects-content">
-                    <div id="econIndicators" class="header2" style="display: inline">
-                        <p>I am currently working on creating models to show the correlation between different key economic health indicators.
-                            The following graph shows a model of % changes of GDP predicting % changes of inflation since 1960.
-                        </p>
-                        <img src="images/INFandGDP.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;display: block;margin: 0 auto;">
-                        <p>As you can tell from the graph above, inflation and gdp have a pretty clear relationship (as nominal GDP is affected by changes of inflation). This cannot be said for the Dow Jones and GDP.
-                        </p>
-                        <img src="images/DJIandGDP.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;display: block;margin: 0 auto;">
-                        <p>If we add in a variety of other variables including: unemployment, consumer confidence, and inflation we see a slightly greater correlation.
-                            Most of the movement is still drawn from GDP, showing that there is very little effect of these variables in explaining variation of the DJIA.
-                        </p>
-                        <img src="images/ALLandDJI.PNG" alt="inflation and gdp" width="30%" height="20%" style="max-width:100%;height:auto;padding-left:1%;padding-top:1%;animation: fadein 2s;display: block;margin: 0 auto;">
-                    </div>
-                    <div id="physics" class="header2" style="display: none">
-                        <p>A simple 2D physics engine that uses the library pygame to draw polygons at a series of points. Gravity is represented
-                            accurately and objects lose momentum with bounces.
-                        </p>
-                        <video width="45%" height="20%" style="max-width:100%;height:auto;padding-left:1%;display: block;margin: 0 auto;" controls>
-                            <source src="images/fallingphysics.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p>Rotations are based on a middle representation of the shape then translated when drawn. The speed at which the box flies at is directly
-                            related to the movement of the mouse. This is done by averaging the direction and speed of the most recent mouse movements.
-                        </p>
-                        <video width="45%" height="20%" style="max-width:100%;height:auto;padding-left:1%;display: block;margin: 0 auto;" controls>
-                            <source src="images/videophysics.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+            <div class="flip-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #0D1B2A;">
+                        <h1>Courses</h1> 
+                        </div>
+                        <div class="flip-card-back" style="background-color: #0D1B2A;">
+                        <p>Linear Algebra, Calculus, Information Systems</p> 
+                        </div>
                     </div>
                 </div>
-
-            </div>
-            <div class="container" id="something">
-                <div id="timeline" class="timeline remove" style="display:none">
-                    <ul>
-                        <li>
-                        <div class="timeline-content">
-                            <h3 class="date">10th March, 2022 (last updated)</h3>
-                            <h1>Today</h1>
-                            <p> I'm currently working on a couple of data projects while searching for an internship. I also
-                                 love to engage in PC building, board games, and volunteer work.
-                            </p>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front" style="background-color: #415A77;">
+                        <h1>Software</h1> 
                         </div>
-                        </li>
-                        <li>
-                        <div class="timeline-content">
-                            <h3 class="date">june-aug, 2021</h3>
-                            <h1>Federal Reserve Board</h1>
-                            <p>During the summer, I worked to write Python programs used for statistical analysis of
-                                financial reports. My largest contribution is a program currently in use that finds outliers in data collections
-                                using the jacknife statistical approach.
-                            </p>
+                        <div class="flip-card-back" style="background-color: #415A77;">
+                        <p>MS Office, Google Suite</p> 
                         </div>
-                        </li>
-                        <li>
-                        <div class="timeline-content">
-                            <h3 class="date">2020-present</h3>
-                            <h1>University of Maryland</h1>
-                            <p>I currently study Information Systems within the Robert H. Smith school of business.
-                                I am a part of the QUEST honors consulting group and a guide in the Business Society and Economy
-                                scholars program.
-                            </p>
-                        </div>
-                        </li>
-                        <li>
-                        <div class="timeline-content">
-                            <h3 class="date">2016-2020</h3>
-                            <h1>Walter Johnson HS</h1>
-                            <p> Volunteering has been an integral part of my life since highschool where I started volunteering
-                                at a variety of local non profits. I received the county certificate of meritorious service for having
-                                over 260 hours of volunteer experience.</p>
-                        </div>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
             </div>
-        </div>    
+        </div> 
     </body>
 </html>
