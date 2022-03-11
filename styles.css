@@ -335,3 +335,19 @@ html {
   }
 }
 
+
+/* Projects formatting */
+#projects {
+  display: grid;
+  grid: auto / auto auto auto auto auto;
+}
+
+#projects-buttons {
+  grid-column-start: auto;
+  grid-column-end: span 1;
+}
+
+#projects-content {
+  grid-column-start: auto;
+  grid-column-end: span 4;
+}
