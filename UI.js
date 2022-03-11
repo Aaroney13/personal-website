@@ -1,14 +1,7 @@
 //click listeners for proj buttons
 const projButts = document.getElementById("projects-buttons").getElementsByTagName("button");
 const projs = document.getElementById("projects-content").getElementsByTagName("div");
-//discard declared vars after code block
-// {
-//     const butts = document.getElementById("projects-buttons").getElementsByTagName("button");
-//     const len = butts.length > projs.length ? butts.length : projs.length;
 
-//     for(let i = 0; i < len; i++)
-//         projButts[i] = [butts[i], projs[i]];        
-// }
 let activeProj = projs[0];
 
 for(let i = 0; i < projButts.length; i++) {
