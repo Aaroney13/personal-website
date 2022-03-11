@@ -1,8 +1,8 @@
 <html>
     <head>  
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="navbar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="UI.js"></script>
     </head>
     <body class="background">  
         <div class="tab">
@@ -14,8 +14,8 @@
         </div>
         <div id="projects" class="remove text-color">
             <div id="projects-buttons">
-                <button type="button" class="collapsible" onclick="openProj('econIndicators')">Economic Indicators</button>
-                <button type="button" class="collapsible" onclick="openProj('physics')">Pygame Physics Engine</button>
+                <button id="econIndicators" type="button" class="collapsible">Economic Indicators</button>
+                <button id="physics" type="button" class="collapsible">Pygame Physics Engine</button>
             </div>
             <div id="projects-content">
                 <div id="econIndicators" class="header2" style="display: inline">
@@ -49,5 +49,6 @@
                 </div>
             </div>
         </div>
+        <script src="UI.js"></script>
     </body>
 </html>
