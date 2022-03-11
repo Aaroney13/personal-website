@@ -286,8 +286,6 @@ html {
 }
 
 .collapsible {
-  background-color: transparent;
-  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -333,10 +331,8 @@ html {
 }
 
 #projects-buttons {
-  grid-column-start: auto;
-  grid-column-end: span 1;
   position: sticky;
-  background-color: rgba(36, 96, 124, 0.5);
+  display: inline-block;
 }
 
 #projects-content {

@@ -1,0 +1,55 @@
+/*
+generic button
+Doesn't work for darker buttons(rgb less than 50)
+designed for button with innerhtml with 4-10char.
+Any button class that ends with -button will "inherit" this class
+Big giantic ass balls
+*/
+button[class$="-button"] {
+	display: inline-block;
+	background-color: rgb(
+		var(--r), var(--g), var(--b)
+	);
+	border: none;
+  user-select: none;
+}
+
+button[class$="-button"]:hover {
+	background-color: rgb(
+		calc(var(--r) - 25),
+		calc(var(--g) - 25),
+		calc(var(--b) - 25)
+	);
+}
+
+button[class$="-button"]:active {
+	background-color: rgb(
+		calc(var(--r) - 50),
+		calc(var(--g) - 50),
+		calc(var(--b) - 50)
+	);
+}
+
+.darkBlue-button {
+  --r: 13;
+  --g: 27;
+  --b: 47;
+	font-size: 17px;
+	color: white;
+}
+
+.blue-button {
+  --r: 27;
+  --g: 38;
+  --b: 59;
+	font-size: 17px;
+	color: white;
+}
+
+.red-button {
+  --r: 255;
+  --g: 38;
+  --b: 59;
+	font-size: 17px;
+	color: white;
+}
