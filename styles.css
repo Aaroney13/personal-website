@@ -121,7 +121,7 @@ html {
 
 .tab {
   overflow: hidden;
-  border: 1px solid rgb(204, 204, 204);
+  border: 1px solid #778DA9;
   background-color: #E0E1DD;
   margin: 0 auto;
 }
@@ -131,6 +131,7 @@ html {
   background-color: inherit;
   float: left;
   border: none;
+  color: #0D1B2A;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -139,12 +140,12 @@ html {
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #778DA9;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: #778DA9;
 }
 
 .header h1{
