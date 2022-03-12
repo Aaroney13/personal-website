@@ -148,6 +148,7 @@ html {
 .header2 h2{
   font-weight: 50;
   font-size: 30px;
+  text-decoration: underline;
   line-height: 10px;
   background-image: none;
   text-align: center;
@@ -178,7 +179,8 @@ html {
   text-align: center;
   line-height: 30px;
   background-image: none;
-  padding-left: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
   padding-bottom: 1%;
   padding-top:1%;
   box-sizing:border-box;
