@@ -12,113 +12,6 @@ html {
   color: white;
 }
 
-.container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 100px 0;
- }
-
-.timeline {
-  width: 80%;
-  height: auto;
-  max-width: 800px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.timeline ul {
-  list-style: none;
-}
-.timeline ul li {
-  padding: 20px;
-  background-color: #0D1B2A;
-  color: white;
-  animation: fadein 2s;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-.timeline ul li:last-child {
-  margin-bottom: 0;
-}
-.timeline-content h1 {
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 10px;
-}
-.timeline-content p {
-  font-size: 16px;
-  animation: fadein 2s;
-  line-height: 30px;
-  font-weight: 300;
-}
-.timeline-content .date {
-  animation-duration: 3s;
-  animation-name: slidein;
-  font-size: 12px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-}
-
-@media only screen and (min-width: 768px) {
-  .timeline:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 2px;
-    height: 100%;
-    background-color: gray;
-  }
-  .timeline ul li {
-    width: 50%;
-    position: relative;
-    margin-bottom: 50px;
-  }
-  .timeline ul li:nth-child(odd) {
-    float: left;
-    clear: right;
-    transform: translateX(-30px);
-    border-radius: 20px 0px 20px 20px;
-  }
-  .timeline ul li:nth-child(even) {
-    float: right;
-    clear: left;
-    transform: translateX(30px);
-    border-radius: 0px 20px 20px 20px;
-  }
-  .timeline ul li::before {
-    content: "";
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: gray;
-    top: 0px;
-  }
-  .timeline ul li:nth-child(odd)::before {
-    transform: translate(50%, -50%);
-    right: -30px;
-  }
-  .timeline ul li:nth-child(even)::before {
-    transform: translate(-50%, -50%);
-    left: -30px;
-  }
-  .timeline-content .date {
-    position: absolute;
-    top: -30px;
-  }
-  .timeline ul li:hover::before {
-    background-color: #E0E1DD;
-  }
-  
-}
-
 .header h1{
   font-weight: 50;
   font-size: 30px;
@@ -133,6 +26,13 @@ html {
 
 .proj_button{
   text-align: center;
+}
+
+/* div center */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header h2{
@@ -221,72 +121,6 @@ html {
   }
 }
 
-.flip-container{
-  display: flex;
-  margin: 10em;
-
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 200px;
-  height: 200px;
-  perspective: 1000px;
-  margin: auto;
-  animation: spin 2.5s;
-}
-
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 5px;
-  padding-top: 40%;
-  animation: fadein 4s;
-}
-.flip-card-front h1{
-  font-weight: 200;
-  color: white;
-  line-height: normal;
-}
-
-.flip-card-back {
-  padding-top:1%;
-  padding-bottom:2%;
-  color: white;
-  transform: rotateY(180deg);
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-.flip-card-back p{
-  padding-top: 42%;
-  font-weight: 200;
-  color: white;
-  line-height: normal;
-}
-
 .collapsible {
   cursor: pointer;
   padding: 18px;
@@ -326,30 +160,10 @@ html {
 }
 
 
-/* Projects formatting */
-#projects {
-  display: grid;
-  grid: auto / 20em auto;
-}
-
-#projects-buttons {
-  position: sticky;
-  display: inline-block;
-}
-
-#projects-content {
-  grid-column-start: auto;
-  grid-column-end: span 1;
-}
-
 .pdf-type {
   display: none;
   width: 55vw;
   height: 75vh;
 }
 
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+

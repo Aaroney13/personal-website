@@ -1,0 +1,16 @@
+
+/* Projects formatting */
+#projects {
+    display: grid;
+    grid: auto / 20em auto;
+  }
+  
+  #projects-buttons {
+    position: sticky;
+    display: inline-block;
+  }
+  
+  #projects-content {
+    grid-column-start: auto;
+    grid-column-end: span 1;
+  }
