@@ -1,16 +1,17 @@
 //click listeners for proj buttons
 const projButts = document.getElementById("projects-buttons").getElementsByTagName("button");
 const projs = document.getElementById("projects-content").getElementsByTagName("div");
+const pdfbutts = document.getElementsByClassName("PDF-button");
+const pdfs = document.getElementsByClassName("PDF-type");
 
 let activeProj = projs[0];
+
 
 for(let i = 0; i < projButts.length; i++) {
     projButts[i].addEventListener("click", (e) => {
         const currProj = e.target;
-
-        //do nothing if clicking the same butt
+        //do nothing if clicking the same button
         if(activeProj.id === currProj.id) {
-            console.log("deez nuts");
             return;
         }
         for(let i = 0; i < projs.length; i++)
@@ -20,7 +21,24 @@ for(let i = 0; i < projButts.length; i++) {
                 activeProj = projs[i];
                 break;
             }
-        
-        console.log(this, e);
+    });
+}
+
+for(let i = 0; i < pdfbutts.length; i++) {
+    pdfbutts[i].addEventListener("click", (e) => {
+        const currbutt = e.target;
+
+        for(let i = 0; i < pdfs.length; i++)
+            if(pdfs[i].id === currbutt.id) {
+                if(pdfs[i].style.display === "none" || pdfs[i].style.display === ""){
+                    pdfs[i].style.display = "inline";
+                    currbutt.innerHTML = "close";
+                }
+                else {
+                    pdfs[i].style.display = "none"
+                    currbutt.innerHTML = "open";
+                }
+                break;
+            }
     });
 }

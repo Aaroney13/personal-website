@@ -2,6 +2,7 @@
     <head>  
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="Button.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="background">  
@@ -14,17 +15,21 @@
         </div>
         <div id="projects" class="remove text-color">
             <div id="projects-buttons">
-                <button id="BMGT190H" type="button" class="collapsible">Stimmy Socks</button>
-                <button id="econIndicators" type="button" class="collapsible">Economic Indicators</button>
-                <button id="physics" type="button" class="collapsible">Pygame Physics Engine</button>
-                
+                <button id="BMGT190H" type="button" class="collapsible stimmy-button">Stimmy Socks</button>
+                <button id="econIndicators" type="button" class="collapsible econ-button">Economic Indicators</button>
+                <button id="physics" type="button" class="collapsible pygame-button">Pygame Physics Engine</button>
             </div>
             <div id="projects-content">
-                <div id="BMGT190H" class="header2" style="display: inline">
+                <div id="BMGT190H" class="header2" style="display: block">
                     <h2>Stimmy Socks</h2>
-                    <p>In this project, I worked with a team to design a wearable tech device called the stimmy sock. This project began with a series of interviews including one with a University of Maryland quarterback named David. 
+                    <p>In this project, I worked with a team to design a wearable tech device called the stimmy sock. This project began with a series of interviews, including one with a University of Maryland quarterback named David. 
                     </p>
-                    <iframe id="iframepdf" src="Epstein_Aarond_Resume.pdf" class="pdf-type"></iframe>
+                    <div class="center">
+                        <iframe id="pdf" src="Epstein_Aarond_Resume.pdf" class="pdf-type"></iframe>
+                    </div>
+                    <div class="center">
+                        <button id="pdf" type="pdfbutton" class="PDF-button">open</button>
+                    </div>
                 </div>
                 <div id="econIndicators" class="header2" style="display: none">
                     <h2>Economic Indicators</h2>

@@ -339,3 +339,15 @@ html {
   grid-column-start: auto;
   grid-column-end: span 1;
 }
+
+.pdf-type {
+  display: none;
+  width: 50vw;
+  height: 60vh;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
