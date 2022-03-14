@@ -16,9 +16,18 @@
         </div>
         <div id="projects" class="remove text-color">
             <div id="projects-buttons">
-                <button id="BMGT190H" type="button" class="collapsible stimmy-button">Stimmy Socks</button>
-                <button id="econIndicators" type="button" class="collapsible econ-button">Economic Indicators</button>
-                <button id="physics" type="button" class="collapsible pygame-button">Pygame Physics Engine</button>
+                <div class="collapsibleContainer">
+                    <button id="BMGT190H" type="button" class="collapsible stimmy-button projButtonActive">Stimmy Socks</button>
+                    <div class="projButtonBg stimmy-buttonBg"></div>
+                </div>
+                <div class="collapsibleContainer">
+                    <button id="econIndicators" type="button" class="collapsible econ-button">Economic Indicators</button>
+                    <div class="projButtonBg econ-buttonBg"></div>
+                </div>
+                <div class="collapsibleContainer"> 
+                    <button id="physics" type="button" class="collapsible pygame-button">Pygame Physics Engine</button>
+                    <div class="projButtonBg pygame-buttonBg"></div>
+                </div>
             </div>
             <div id="projects-content">
                 <div id="BMGT190H" class="header2" style="display: block">

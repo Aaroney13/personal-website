@@ -13,4 +13,5 @@
   #projects-content {
     grid-column-start: auto;
     grid-column-end: span 1;
+    padding: 1em;
   }

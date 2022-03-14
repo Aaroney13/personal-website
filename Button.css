@@ -5,58 +5,120 @@ designed for button with innerhtml with 4-10char.
 Any button class that ends with -button will "inherit" this class
 */
 
+.collapsibleContainer {
+    position: relative;
+    height: 56.8px;
+}
+
 button[class$="-button"] {
     display: inline-block;
-    background-color: rgba(
-        var(--r), var(--g), var(--b), var(--a)
+    background-color: rgb(
+        var(--r), var(--g), var(--b)
     );
     border: none;
   user-select: none;
 }
 
-button[class$="-button"]:hover {
-    background-color: rgba(
+.collapsibleContainer:hover > button[class$="-button"] {
+    background-color: rgb(
         calc(var(--r) - 25),
         calc(var(--g) - 25),
-        calc(var(--b) - 25),
-        calc(var(--a))
+        calc(var(--b) - 25)
     );
 }
 
 button[class$="-button"]:active {
-    background-color: rgba(
+    background-color: rgb(
         calc(var(--r) - 50),
         calc(var(--g) - 50),
-        calc(var(--b) - 50),
-        calc(var(--a))
+        calc(var(--b) - 50)
     );
+}
+
+.projButtonBg {
+    width: 100%;
+    height: 56.8px;
+    position: relative;
+    top: -56.8px;
+    z-index: -1;
+}
+
+div[class$="-buttonBg"] {
+    background-color: rgb(
+        calc(var(--r)),
+        calc(var(--g)),
+        calc(var(--b))
+    );
+}
+
+.collapsibleContainer:hover > div[class$="-buttonBg"] {
+    background-color: rgb(
+        calc(var(--r) - 25),
+        calc(var(--g) - 25),
+        calc(var(--b) - 25)
+    );
+}
+
+.projButtonActive.projButtonActive {
+    background-color: rgb(172, 183, 195);
+    animation-play-state: paused;
+    color: #0D1B2A;
+}
+
+.projButtonActive.projButtonActive:hover {
+    background-color: rgb(147,158,170);
+}
+
+.projButtonActive + .projButtonBg {
+    --r: 172;
+    --g: 183;
+    --b: 195;
+}
+
+.collapsibleContainer:hover > .projButtonActive {
+    margin-left: 1em;
 }
 
 .stimmy-button {
     --r: 13;
     --g: 27;
     --b: 47;
-    --a: 0.8;
     font-size: 17px;
     color: white;
+}
+
+.stimmy-buttonBg {
+    --r: 13;
+    --g: 27;
+    --b: 47;
 }
 
 .econ-button {
     --r: 27;
     --g: 38;
     --b: 59;
-    --a: 0.8;
     font-size: 17px;
     color: white;
+}
+
+.econ-buttonBg {
+    --r: 27;
+    --g: 38;
+    --b: 59;
 }
 
 .pygame-button {
     --r: 65;
     --g: 90;
     --b: 119;
-    --a: 0.8;
     font-size: 17px;
     color: white;
+}
+
+.pygame-buttonBg {
+    --r: 65;
+    --g: 90;
+    --b: 119;
 }
 
 .PDF-button {
@@ -69,3 +131,4 @@ button[class$="-button"]:active {
     padding: 1%;
     border-radius: 10%;
 }
+

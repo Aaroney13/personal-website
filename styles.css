@@ -129,13 +129,13 @@ html {
   text-align: center;
   outline: none;
   
-  animation: zoomOut 0.2s ease-in-out forwards;
+  animation: slideBack 0.2s ease-in-out forwards;
   font-size: 15px;
 }
 
 @keyframes zoom {
   from {
-    
+    font-size: 15px;
   }
   to {
     font-size: 17px;
@@ -149,8 +149,25 @@ html {
     font-size: 15px;
   }
 }
+
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1em);
+  }
+}
+@keyframes slideBack {
+  from {
+    transform: translateX(1em);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .collapsible:hover {
-  animation: zoom 0.2s ease-in-out forwards;
+  animation: slideRight 0.2s ease-in-out forwards;
 }
 
 @media (max-width: 800px) {

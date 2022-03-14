@@ -17,7 +17,16 @@ for(let i = 0; i < projButts.length; i++) {
         for(let i = 0; i < projs.length; i++)
             if(projs[i].id === currProj.id) {
                 activeProj.style.display = "none";
+                e.target.classList.add("projButtonActive");
+                e.target.style.marginLeft = "0";
+                e.target.addEventListener("mouseleave", (e) => {
+                    e.target.style.marginLeft = null;
+                });
+
                 projs[i].style.display = "inline";
+                
+                document.getElementById(activeProj.id).classList.remove("projButtonActive");
+
                 activeProj = projs[i];
                 break;
             }

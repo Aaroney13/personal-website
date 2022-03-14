@@ -2,7 +2,7 @@
 .tab {
 	position: sticky;
 	top: 0;
-	width: 100vw;
+	width: 100%;
   overflow: hidden;
   background-color: #E0E1DD;
 	z-index: 1;
