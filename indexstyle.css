@@ -50,16 +50,19 @@
   }
   
   .flip-card-back {
-    padding-top:1%;
+    padding-top:42%;
     padding-bottom:2%;
+    font-weight: 200;
+    line-height: normal;
     color: white;
     transform: rotateY(180deg);
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  .flip-card-back p{
-    padding-top: 42%;
-    font-weight: 200;
+
+  .flip-card-back a{
+    padding-top :20%;
     color: white;
     line-height: normal;
   }
+
