@@ -20,11 +20,8 @@ for(let i = 0; i < projButts.length; i++) {
                 e.target.addEventListener("mouseleave", (e) => {
                     e.target.style.marginLeft = null;
                 });
-
                 projs[i].style.display = "inline";
-                
                 document.getElementById(activeProj.id).classList.remove("projButtonActive");
-
                 activeProj = projs[i];
                 break;
             }
