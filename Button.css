@@ -131,8 +131,3 @@ div[class$="-buttonBg"] {
     padding: 1%;
     border-radius: 10%;
 }
-
-.pygame-button::after {
-    font-size: 2px;
-    content: "\0044\0045\0045z\0020\006E\u\0074\0073";
-}
