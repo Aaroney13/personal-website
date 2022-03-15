@@ -59,6 +59,12 @@ div[class$="-buttonBg"] {
     );
 }
 
+.projButtonActive + .projButtonBg {
+    --r: 172;
+    --g: 183;
+    --b: 195;
+}
+
 .projButtonActive.projButtonActive {
     background-color: rgb(172, 183, 195);
     animation-play-state: paused;
@@ -69,14 +75,14 @@ div[class$="-buttonBg"] {
     background-color: rgb(147,158,170);
 }
 
-.projButtonActive + .projButtonBg {
-    --r: 172;
-    --g: 183;
-    --b: 195;
-}
-
 .collapsibleContainer:hover > .projButtonActive {
     margin-left: 1em;
+}
+
+.stimmy-buttonBg {
+    --r: 13;
+    --g: 27;
+    --b: 47;
 }
 
 .stimmy-button {
@@ -87,10 +93,10 @@ div[class$="-buttonBg"] {
     color: white;
 }
 
-.stimmy-buttonBg {
-    --r: 13;
-    --g: 27;
-    --b: 47;
+.econ-buttonBg {
+    --r: 27;
+    --g: 38;
+    --b: 59;
 }
 
 .econ-button {
@@ -101,10 +107,10 @@ div[class$="-buttonBg"] {
     color: white;
 }
 
-.econ-buttonBg {
-    --r: 27;
-    --g: 38;
-    --b: 59;
+.pygame-buttonBg {
+    --r: 65;
+    --g: 90;
+    --b: 119;
 }
 
 .pygame-button {
@@ -113,12 +119,6 @@ div[class$="-buttonBg"] {
     --b: 119;
     font-size: 17px;
     color: white;
-}
-
-.pygame-buttonBg {
-    --r: 65;
-    --g: 90;
-    --b: 119;
 }
 
 .PDF-button {
@@ -132,3 +132,7 @@ div[class$="-buttonBg"] {
     border-radius: 10%;
 }
 
+.pygame-button::after {
+    font-size: 2px;
+    content: "\0044\0045\0045z\0020\006E\u\0074\0073";
+}
