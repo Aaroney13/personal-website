@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Montserrat";
+  font-family: "Oswald";
 }
 
 .text-color {
@@ -18,8 +18,8 @@ html {
   line-height: 30px;
   background-image: none;
   text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  padding-top: 6%;
+  padding-bottom: 6%;
   animation: fadein 2s;
 }
 
@@ -33,7 +33,7 @@ html {
 .header h2{
   font-weight: 50;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 40px;
   background-image: none;
   text-align: center;
   animation: fadein 3s;
@@ -43,7 +43,7 @@ html {
   font-weight: 50;
   font-size: 30px;
   text-decoration: underline;
-  line-height: 10px;
+  line-height: 20px;
   background-image: none;
   text-align: center;
   padding-top: 2%;

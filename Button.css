@@ -121,6 +121,34 @@ div[class$="-buttonBg"] {
     color: white;
 }
 
+.Rokoske-buttonBg {
+    --r: 50;
+    --g: 50;
+    --b: 50;
+}
+
+.Rokoske-button {
+    --r: 50;
+    --g: 50;
+    --b: 50;
+    font-size: 17px;
+    color: white;
+}
+
+.metadc-buttonBg {
+    --r: 50;
+    --g: 50;
+    --b: 50;
+}
+
+.metadc-button {
+    --r: 50;
+    --g: 50;
+    --b: 50;
+    font-size: 17px;
+    color: white;
+}
+
 .PDF-button {
     --r: 65;
     --g: 90;
