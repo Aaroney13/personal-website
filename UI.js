@@ -4,13 +4,23 @@ const projs = document.getElementById("projects-content").getElementsByTagName("
 const pdfbutts = document.getElementsByClassName("PDF-button");
 const pdfs = document.getElementsByClassName("PDF-type");
 let activeProj = projs[0];
+var sample = document.getElementById("background");
+var backstyle = sample.style;
 
 for(let i = 0; i < projButts.length; i++) {
     projButts[i].addEventListener("click", (e) => {
+        var sample = document.getElementById("background");
         const currProj = e.target;
         //do nothing if clicking the same button
         if(activeProj.id === currProj.id) {
             return;
+        }
+        if (projs[i].id === "Rokoske"){
+ // using VAR
+            sample.setAttribute('style', 'background-image: url(images/previewSmall.jpg)');
+        }
+        else {
+            sample.setAttribute('style', backstyle);
         }
         for(let i = 0; i < projs.length; i++) {
             if(projs[i].id === currProj.id) {

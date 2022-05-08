@@ -18,7 +18,7 @@ html {
   line-height: 30px;
   background-image: none;
   text-align: center;
-  padding-top: 6%;
+  padding-top: 3%;
   padding-bottom: 2%;
   animation: fadein 2s;
 }
@@ -51,6 +51,7 @@ html {
   padding-bottom: 2%;
   margin:0%;
   animation: fadein 2s;
+  
 }
 
 .header2 h3{

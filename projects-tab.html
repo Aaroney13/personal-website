@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="Button.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body class="background">  
+    <body class="background" id="background">  
         <div class="tab">
             <a href="index.html"><button type="button">Home</button></a>
             <a href="timeline.html"><button type="button">Timeline</button></a>
@@ -16,8 +16,16 @@
         </div>
         <div id="projects" class="remove text-color">
             <div id="projects-buttons">
+                <div class="collapsibleContainer"> 
+                    <button id="metadc" type="button" class="collapsible projButtonActive metadc-button">Meta Data Challenge</button>
+                    <div class="projButtonBg metadc-buttonBg"></div>
+                </div>
+                <div class="collapsibleContainer"> 
+                    <button id="Rokoske" type="button" class="collapsible Rokoske-button">Asteroid Rokoske Rotation Period</button>
+                    <div class="projButtonBg Rokoske-buttonBg"></div>
+                </div>
                 <div class="collapsibleContainer">
-                    <button id="BMGT190H" type="button" class="collapsible projButtonActive stimmy-button">Stimmy Socks</button>
+                    <button id="BMGT190H" type="button" class="collapsible stimmy-button">Stimmy Socks</button>
                     <div class="projButtonBg stimmy-buttonBg"></div>
                 </div>
                 <div class="collapsibleContainer">
@@ -29,17 +37,22 @@
                     <div class="projButtonBg pygame-buttonBg"></div>
                 </div>
                 <!-- add here for button -->
-                <div class="collapsibleContainer"> 
-                    <button id="Rokoske" type="button" class="collapsible Rokoske-button">Asteroid Rokoske Rotation Period</button>
-                    <div class="projButtonBg Rokoske-buttonBg"></div>
-                </div>
-                <div class="collapsibleContainer"> 
-                    <button id="metadc" type="button" class="collapsible metadc-button">Meta Data Challenge</button>
-                    <div class="projButtonBg metadc-buttonBg"></div>
-                </div>
             </div>
             <div id="projects-content">
-                <div id="BMGT190H" class="header2" style="display: block">
+                <div id="metadc" class="header2" style="display: block">
+                    <h2>Meta Data Challenge</h2>
+                    <p>Selected finalist for Meta 2022 Data Challenge (coming soon)</p>
+                </div>
+                <div id="Rokoske" class="header2" style="display: none">
+                    <h2>Rokoske</h2>
+                    <p>In this project, I worked in a team to discover the rotation period for asteroid 3736 Rokoske. Our paper is currently awaiting publication in a scientific journal.</p>
+                    <h2>Process</h2>
+                    <p>On several nights, I observed Rokoske using the T21 telescope in Mayhill, New Mexico. Below is an example finder image for the night of April 1st.</p>
+                    <div class="center">
+                        <img src="images/april1-Rokoske-finder.png" width="auto" height="auto" style="padding:1%;max-width:40%;max-height:40%"alt="Prototyping Notes1">
+                    </div>
+                </div>
+                <div id="BMGT190H" class="header2" style="display: none">
                     <h2>Stimmy Socks: Project Description</h2>
                     <p>In this project, my team was tasked with designing a product that met the needs of one of the five senses. The team: conducted interviews, surveyed athletes, designed and prototyped a product, analyzed market and financial considerations, presented findings, and developed a paper.
                     </p>
@@ -54,10 +67,8 @@
                     <h2>Product Design</h2>
                     <p>Originally, we designed a product based on a shoe insert. After rounds of feedback however, we rethought and redesigned our product, opting for a sock that uses TENS therapy in order to reduce foot pain. <br> Below are some prototype considerations and a rough sketch.
                     </p>
-                    <div class="center">
-                        <img src="images/interviewnotes/initialprototyping.PNG" width="auto" height="auto" style="padding:1%;max-width:40%;max-height:40%"alt="Prototyping Notes1">
-                        <img src="images/design.png" width="auto" height="auto" style="padding:1%;max-width:35%;max-height:35%"alt="Sock design">
-                    </div>
+                    <img src="images/interviewnotes/initialprototyping.PNG" width="auto" height="auto" style="padding:1%;max-width:40%;max-height:40%"alt="Prototyping Notes1">
+                    <img src="images/design.png" width="auto" height="auto" style="padding:1%;max-width:35%;max-height:35%"alt="Sock design">
                     <p>At the top of the sock we use a custom pcb connected to a set of TENS therapy patches at the base of the sock. To prototype this product we 3D printed housing for the electronics shown below.
                     </p>
                     <div class="center">
@@ -116,14 +127,6 @@
                         <source src="images/videophysics.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-                </div>
-                <div id="Rokoske" class="header2" style="display: none">
-                    <h2>Rokoske</h2>
-                    <p>With a team of 11, discovered the rotation period for asteroid 3736 Rokoske. A paper is currently being written and will eventually be published in a scientific journal. (coming soon)</p>
-                </div>
-                <div id="metadc" class="header2" style="display: none">
-                    <h2>Meta Data Challenge</h2>
-                    <p>Selected finalist for Meta 2022 Data Challenge (coming soon)</p>
                 </div>
             </div>
         </div>

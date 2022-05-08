@@ -14,4 +14,14 @@
     grid-column-start: auto;
     grid-column-end: span 1;
     padding: 1em;
+    
   }
+.frame{
+  padding: 10px;
+  background-color: #0D1B2A;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
