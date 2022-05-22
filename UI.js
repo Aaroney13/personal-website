@@ -6,6 +6,21 @@ const pdfs = document.getElementsByClassName("PDF-type");
 let activeProj = projs[0];
 var sample = document.getElementById("background");
 var backstyle = sample.style;
+let open = true;
+
+let mini_button = document.getElementById('mini');
+mini_button.addEventListener("click", (e) => {
+    console.log("click");
+    if (open){
+        document.getElementById("projects-buttons").setAttribute('style', 'display:inline-block');
+        open = false;
+    }
+    else {
+        document.getElementById("projects-buttons").setAttribute('style', 'display:none');
+        open = true;
+    }
+
+    });
 
 for(let i = 0; i < projButts.length; i++) {
     projButts[i].addEventListener("click", (e) => {

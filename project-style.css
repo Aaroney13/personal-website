@@ -30,7 +30,7 @@
 
 @media all and (max-width: 900px){
   #projects {
-    display:flex;
+    display:inline-block;
     margin: auto;
   }
 
@@ -54,13 +54,10 @@
 
   }
   
-  .project-mini:hover + #projects-buttons{
-    /* display: inline-block; */
-    display: none;
-  }
 
   #projects-buttons {
-    display: none;
+    display:none;
+    width: 100%;
   }
 
 
