@@ -40,7 +40,7 @@
 
   .project-mini {
     position: sticky;
-    top: 0;
+    top: 50;
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -54,11 +54,12 @@
 
   }
   
-
   #projects-buttons {
+    position: sticky;
+    opacity: .95;
+    top: 70;
     display:none;
     width: 100%;
   }
-
 
 }

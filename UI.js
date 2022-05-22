@@ -8,6 +8,7 @@ var sample = document.getElementById("background");
 var backstyle = sample.style;
 let open = true;
 
+// adds a dropdown for when in mobile mode for pojects tab
 let mini_button = document.getElementById('mini');
 mini_button.addEventListener("click", (e) => {
     console.log("click");
@@ -20,7 +21,19 @@ mini_button.addEventListener("click", (e) => {
         open = true;
     }
 
-    });
+});
+
+// window.onscroll = function (e) {  
+//     if (window.innerWidth < 900){
+//         document.getElementById("projects-buttons").setAttribute('style', 'display:none');
+//     }
+// } 
+
+window.addEventListener('resize', function(event) {
+    if (window.innerWidth > 900){
+        document.getElementById("projects-buttons").setAttribute('style', 'display:inline-block');
+    }
+}, true);
 
 for(let i = 0; i < projButts.length; i++) {
     projButts[i].addEventListener("click", (e) => {
@@ -48,6 +61,10 @@ for(let i = 0; i < projButts.length; i++) {
                 projs[i].style.display = "inline";
                 document.getElementById(activeProj.id).classList.remove("projButtonActive");
                 activeProj = projs[i];
+                if (window.innerWidth < 900){
+                    document.getElementById("projects-buttons").setAttribute('style', 'display:none');
+                    open = true;
+                }
                 break;
             }
         }
