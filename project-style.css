@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 /* Projects formatting */
 #projects {
     display: grid;
@@ -24,4 +24,44 @@
   display: flex;
   margin-bottom: 20px;
 }
+.project-mini {
+  display:none;
+}
 
+@media all and (max-width: 900px){
+  #projects {
+    display:flex;
+    margin: auto;
+  }
+
+  .frame{
+    display: none;
+  }
+
+  .project-mini {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+    opacity: 0.9;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+
+  }
+  
+  .project-mini:hover + #projects-buttons{
+    /* display: inline-block; */
+    display: none;
+  }
+
+  #projects-buttons {
+    display: none;
+  }
+
+
+}
