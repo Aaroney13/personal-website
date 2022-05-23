@@ -6,8 +6,8 @@
   
 .flip-card {
   background-color: transparent;
-  width: 20%;
-  height: 20%;
+  width: 200px;
+  height: 200px;
   perspective: 1000px;
   margin: auto;
   animation: spin 2.5s;
