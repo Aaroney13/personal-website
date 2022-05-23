@@ -46,8 +46,7 @@ for(let i = 0; i < projButts.length; i++) {
         if(activeProj.id === currProj.id) {
             return;
         }
-        if (projs[i].id === "Rokoske"){
- // using VAR
+        if (currProj.id === "Rokoske"){
             sample.setAttribute('style', 'background-image: url(images/previewSmall.jpg)');
         }
         else {
