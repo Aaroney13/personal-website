@@ -1,13 +1,13 @@
 .flip-container{
     display: flex;
     margin: 10em;
-  
+
   }
   
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 200px;
+  width: 20%;
+  height: 20%;
   perspective: 1000px;
   margin: auto;
   animation: spin 2.5s;

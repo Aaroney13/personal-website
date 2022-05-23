@@ -3,6 +3,7 @@
 #projects {
     display: grid;
     grid: auto / 20em auto;
+
   }
   
   #projects-buttons {
@@ -49,7 +50,7 @@
     display: inline-block;
     font-family: "Montserrat";
     font-size: 15px;
-    outline: none;
+    outline:#0D1B2A;
     cursor: pointer;
 
   }

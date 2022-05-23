@@ -33,6 +33,9 @@ window.addEventListener('resize', function(event) {
     if (window.innerWidth > 900){
         document.getElementById("projects-buttons").setAttribute('style', 'display:inline-block');
     }
+    else {
+        document.getElementById("projects-buttons").setAttribute('style', 'display:none');
+    }
 }, true);
 
 for(let i = 0; i < projButts.length; i++) {
@@ -65,6 +68,7 @@ for(let i = 0; i < projButts.length; i++) {
                     document.getElementById("projects-buttons").setAttribute('style', 'display:none');
                     open = true;
                 }
+                document.body.scrollTop = document.documentElement.scrollTop = 0;
                 break;
             }
         }
