@@ -7,7 +7,6 @@
   }
   
   #projects-buttons {
-    position: sticky;
     display: inline-block;
   }
   
@@ -20,6 +19,14 @@
 .frame{
   padding: 10px;
   background-color: #0D1B2A;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.fblack{
+  padding: 10px;
+  background-color: black;
   color: white;
   border-radius: 10px;
   display: flex;
