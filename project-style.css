@@ -26,7 +26,6 @@
 }
 .fblack{
   padding: 10px;
-  background-color: black;
   color: white;
   border-radius: 10px;
   display: flex;
@@ -48,7 +47,7 @@
 
   .project-mini {
     position: sticky;
-    top: 50;
+    top: 63;
     width: 100%;
     margin: auto;
     overflow: hidden;
@@ -64,8 +63,7 @@
   
   #projects-buttons {
     position: sticky;
-    opacity: .95;
-    top: 70;
+    top: 85;
     display:none;
     width: 100%;
   }
