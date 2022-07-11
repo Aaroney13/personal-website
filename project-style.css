@@ -69,3 +69,15 @@
   }
 
 }
+.img_center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (max-width: 630px) {
+  .img_center {
+    display:block;
+    margin-left:6%;
+  }
+}

@@ -9,7 +9,6 @@
 }
 
 .logo {
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,7 +21,10 @@
   width: 25px;
   opacity: 60%;
 }
-
+.logo a{
+  padding-left:3px;
+  padding-right:3px;
+}
 .title p{
   font-size: 1.35rem;
   text-align:center;
