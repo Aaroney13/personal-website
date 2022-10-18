@@ -9,6 +9,7 @@
   background-color: white;
   opacity: 0.9;
 	z-index: 1;
+  display:inline-block
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -17,18 +18,27 @@
   float: left;
   border: none;
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 16px;
   color: #0D1B2A;
   outline: none;
   cursor: pointer;
-  padding: 16px 18px;
+  padding: 22px 20px;
   transition: 0.3s;
 } 
 
 .tab button:hover {
-  background-color: #778DA9;
+  background-color: #97d3ed;
 }
 
 .tab button.active {
   background-color: #556579;
+}
+/* 
+.tab .icon{
+  display:none;
+} */
+
+@media all and (max-width: 600px) {
+
+
 }
