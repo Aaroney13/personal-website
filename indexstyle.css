@@ -1,6 +1,6 @@
 .home_container{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 @media all and (max-width: 700px) {
     .home_container {
@@ -10,9 +10,10 @@
 
 .logo {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-left: 50px;
+  justify-content: left;
 }
+
 .logo img{
   width: 25px;
   opacity: 30%;
@@ -26,10 +27,23 @@
   padding-right:3px;
   padding-top: 6px;
 }
+
+.title{
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.inner-box{
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
 .title p{
   font-size: 1.35rem;
-  text-align:center;
-  display: flex;
+  line-height: 30px;
 }
 
 .title h1{
@@ -49,10 +63,6 @@
   font-size: 30px;
   line-height: 30px;
   background-image: none;
-  display: inline;
-  text-align: left;
-  padding-top: 3%;
   padding-bottom:1%;
   animation: fadein 2s;
-
 }
