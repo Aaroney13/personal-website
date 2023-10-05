@@ -43,7 +43,6 @@
 
 .title p{
   font-size: 1.35rem;
-  line-height: 30px;
 }
 
 .title h1{
@@ -61,7 +60,7 @@
 .title h2{
   font-weight: bold;
   font-size: 30px;
-  line-height: 30px;
+/*  line-height: 30px; */
   background-image: none;
   padding-bottom:1%;
   animation: fadein 2s;

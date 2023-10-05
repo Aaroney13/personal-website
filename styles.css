@@ -15,9 +15,9 @@ html {
 .header h1{
   font-weight: bold;
   font-size: 30px;
-  line-height: 30px;
+ /* line-height: 30px; */
   background-image: none;
-  text-align: center;
+/*  text-align: center; */
   padding-top: 3%;
   padding-bottom: 2%;
   animation: fadein 2s;
@@ -35,7 +35,7 @@ html {
 .header h2{
   font-weight: 50;
   font-size: 30px;
-  line-height: 40px;
+/*  line-height: 40px; */
   background-image: none;
   text-align: center;
   animation: fadein 3s;
@@ -44,15 +44,13 @@ html {
   .title h3{
     margin-left:auto;
   }
-  .title p{
-    margin:auto;
-  }
+
 
 }
 .header2 h2{
   font-weight: bold;
   font-size: 30px;
-  line-height: 20px;
+  /*line-height: 20px;*/
   background-image: none;
   text-align: center;
   padding-top: 2%;
