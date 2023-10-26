@@ -93,3 +93,20 @@ for(let i = 0; i < pdfbutts.length; i++) {
             }
     });
 }
+
+function centerScroll(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        const viewportHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        
+        // Calculate the desired scroll position
+        const offset = viewportHeight / 3;
+        const desiredPosition = elementTop + window.pageYOffset - offset;
+
+        window.scroll({
+            top: desiredPosition,
+            behavior: 'smooth'
+        });
+    }
+}
