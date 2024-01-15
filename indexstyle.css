@@ -39,8 +39,7 @@ html {
 
 .logo {
   display: flex;
-  padding-left: 50px;
-  justify-content: left;
+  justify-content: center;
 }
 
 .logo img{
@@ -66,18 +65,31 @@ html {
   /* background: linear-gradient(to right, #f2f2f2, #efefef); */
 }
 
+.centered-box {
+  width: 40%;      /* Adjust the width as needed */
+
+  background-color: rgba(255, 255, 255); /* White with opacity */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: adds a subtle shadow */
+  padding: 20px;   /* Optional: for internal spacing */
+  box-sizing: border-box; /* Optional: helps maintain the width and height */
+}
+
+
 .title:hover {
   box-shadow: 0 0 15px rgba(116, 116, 116, 0.6);
 }
 
-.inner-box{
+/* .inner-box{
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-top: 5px;
   display: flex;
-  align-items: flex-start;
-}
+} */
 
 .title p{
   font-size: 1.35rem;
@@ -102,4 +114,13 @@ html {
   background-image: none;
   padding-bottom:1%;
   animation: fadein 2s;
+}
+@media all and (max-width: 800px) {
+  .title h3{
+    margin-left:auto;
+  }
+  .centered-box {
+    width: 90%; /* Make the box narrower on smaller screens */
+  }
+
 }

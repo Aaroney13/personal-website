@@ -12,6 +12,16 @@ html {
   color: rgb(52, 71, 105);
 }
 
+#vanta-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
 .header h1{
   font-weight: bold;
   font-size: 30px;
@@ -44,7 +54,9 @@ html {
   .title h3{
     margin-left:auto;
   }
-
+  .centered-box {
+    width: 90%; /* Make the box narrower on smaller screens */
+  }
 
 }
 .header2 h2{
