@@ -120,7 +120,9 @@ html {
     margin-left:auto;
   }
   .centered-box {
-    width: 90%; /* Make the box narrower on smaller screens */
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
   }
 
 }
